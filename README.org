@@ -1,0 +1,6 @@
+* sendmail
+
+Erlang sendmail interface
+
+Exactly the same as upstream, but with a Makefile
+

@@ -1,2 +1,0 @@
-# sendmail
-Erlang sendmail interface
