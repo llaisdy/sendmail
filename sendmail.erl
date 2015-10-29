@@ -121,7 +121,7 @@ sendmail_wait(P, Status, Eof, Ds) ->
 data(From, To, Subject, Message, Opts0) ->
     %% TODO: should accept additional headers as options
     Opts = proplists:expand([{text, [{content_type,"text/plain"}]},
-                             {html, [{content_type,"text/html"}]}],
+                             {html, [{content_type,"text/html; charset=\"UTF-8\""}]}],
                             Opts0),
     ContentType = proplists:get_value(content_type, Opts, "text/plain"),
     Attached = proplists:get_value(attached, Opts, []),
